@@ -92,7 +92,7 @@ function showIntro(data){
     // var data = obj.src;
     // console.log(data);
 
-   var p=data.replace('file:///home/zemoso/Desktop/My%20webpage/','');
+   var p=data.replace('https://surya-zemoso.github.io/','');
 
         document.getElementById('url').value=p;
 
@@ -132,7 +132,7 @@ function imagePop(element){
         spanClose.onclick = function() { 
           modal.style.display = "none";
         } 
-        var n=dta.replace('file:///home/zemoso/Desktop/My%20webpage/','');
+        var n=dta.replace('https://surya-zemoso.github.io/','');
 
 //delete
       
