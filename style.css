@@ -18,11 +18,11 @@ body{
              color: white; }
 
 .line{
-width: 900px;
-height: 47px;
-margin-left:  40px;
-margin-top: 400px;
-border-bottom: 2px solid #283747;
+width: 970px;
+height: 50px;
+margin-left:  15px;
+margin-top: 75px;
+border-bottom: 2px solid #85929E ;
 border-radius: 2px;
 position: absolute;
 }
@@ -35,7 +35,12 @@ position: absolute;
 #check{
     
       background-color: #5D6D7E;
-     padding: 24px; border: #999 1px ;
+     padding: 24px; border: #999 1px 
+
+}
+
+.moveleft{
+  margin-left: 40px;
 }
 #main{
     background-color: #5D6D7E;
@@ -51,26 +56,23 @@ position: absolute;
 
     float: right;
 }
-/*#link{
-    background-color: #5D6D7E;
-    clear: both;
-    float: left;
-    width: 350px;
-}*/
+
 #footer{
     margin-top:150px;
+    margin-bottom:15px;
     background-color: #5D6D7E;
     float: right;
     width: 650px;
     
 }
-  a{font-family:Arial,Helventica,sans-serif;
+  a{        font-family:Arial,Helventica,sans-serif;
             font-size:17px;
             background:#D5D8DC;
             padding: 12px 35px;
 			      display: inline-block;
             color:#000;
-            margin-left: 2px;
+            margin-left: 5px;
+            /*margin-right: 10px;*/
             cursor: pointer;
             text-decoration:none;
             border-radius:3px;
@@ -84,12 +86,36 @@ position: absolute;
   a:hover {background-color: #FDF2E9}
   
 .card{
-  background: #566573;
+  width: 820px; 
+  align-items:center;
+  background: #919dad;
   padding: 10px 35px 10px 35px;
-  margin:10px 40px 15px 40px ; 
+  margin:10px 40px 15px 60px ; 
   border: 1px solid rgba(129, 129, 129, 0.1);
   border-radius: 10px;
 }  
+
+
+.contactCard{
+
+  background:#CACFD2;
+  /*padding: 10px 10px 10px 10px;*/
+  margin: 10px 75px 5px 400px ; 
+  border: 2px solid rgba(129, 129, 129, 0.1);
+  border-radius: 5px;
+
+
+}
+ul textarea{
+  margin-left: 50px;
+  width: 175px;
+  height: 100px;
+}
+
+div ul{ margin-left: 100px;
+         }
+ul button{margin-left: 35px;
+          width:175px;}
   
 .img-frame {
                            background:#A2D9CE;
@@ -103,41 +129,79 @@ position: absolute;
   padding: 5px;
   background: #D6DBDF;
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
-                           
+                         
   border-radius: 10px;
 }
 
-.gallery > div {
-  position: relative;
+.gallery > div > div{
+  /*position: relative;
   float: left;
-  padding: 5px;
+  padding: 5px;*/
+  display: inline-block;
+  margin: 5px;
 }
 
-.gallery > div > img {
-  display: block;
+.gallery > div > div > img{
+  display: inline-block;
   width: 265px;
   height:250px;
   transition: .1s transform;
   transform: translateZ(0);
+  display: inline-block;
   padding: 3px; 
-  border:1px solid black;
-}
+  border:1px solid grey;
+  clear:both;
 
-.gallery > div:hover {
+ }
+
+.gallery > div > div:hover{
   z-index: 1;
+  position:relative;
+  /*display: inline-block;*/
 }
 
-.gallery > div:hover > img {
+.gallery > div > div:hover > img{
   transform: scale(1.7,1.7);
   transition: .3s transform;
 }
 
-.cf:before, .cf:after {
-  display: table;
-  content: "";
-  line-height: 0;
+
+input:invalid {
+  border: 1px solid #E67E22;
 }
 
-.cf:after {
-  clear: both;
+input:valid {
+  border: 2px solid grey;
 }
+#margintop{ margin-top:15px; }
+
+.gallery_button{
+             
+            font-family:Arial,Helventica,sans-serif;
+            font-size:12px;
+            background:#DDDDDD;
+            padding: 5px 15px;
+            display: inline-block;
+            color:#000;
+            align-items: center;
+            font-weight: bold;
+            margin-left: 5px;
+            width:100px;
+            /*margin-right: 10px;*/
+            cursor: pointer;
+            text-decoration:none;
+            border-radius:3px;
+            transition: 0.5s;
+           }
+
+.gallery_button:hover,
+.gallery_button:focus {
+   color:#74AFAD;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.shiftRight{
+  margin-left: 600px;
+}
+

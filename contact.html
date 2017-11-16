@@ -3,7 +3,7 @@
 
         #Container{
               width:1000px;
-              height: 800px;
+              height: 900px;
               background-color: #5D6D7E;
               margin-left: auto;
               margin-right: auto; }
@@ -17,12 +17,12 @@
             <div id="header">
                 <h1>Suryakant Kumar</h1>
             </div>
-            <div id="check">
+            <div id="check" class = "moveleft">
                  <a href="index.html">Home</a> 
                  <a href="about.html">About</a> 
-                 <a href="Pos.html">Positions Of Responsibility</a> 
                  <a href="projects.html">Projects</a> 
-                 <a href="gallery.html">My Gallery</a> 
+                 <a href="gallery.html"> My Gallery</a> 
+                 <a href="galleryAdmin.html">Galley Admin</a> 
                  <a href="contact.html">Contact</a>   
             </div>
             <h2 >Contacts</h2>
@@ -31,27 +31,73 @@
                 
                 <img src="image/c27.jpg" alt="Smiley face" width="300" height="300" border="0" alt="" class="img-frame">
             </div>
-            <div id="write">
+
+
+    <!-- <div id="write">
                 
                  <h3><u><font color="yellow">Mail me:-</font></u></h3>
-    <span>
+      <span>
               <ul>
-                <li>suryakant.kumar@zemosolabs.com</li>
-                <li>suryakantkumar4455@gmail.com</li>
+                  <li>suryakant.kumar@zemosolabs.com</li>
+                  <li>suryakantkumar4455@gmail.com</li>
               </ul>
-          <h3><u><font color="yellow">Address:-</font></u></h3>      
+                  <h3><u><font color="yellow">Address:-</font></u></h3>      
               <ul>
-                <li>K.R Mens Hostel, gachibowli, Hyderabad</li>
-                <li>Office:- Zemoso Technology, Hyderabad</li>
+                  <li>K.R Mens Hostel, gachibowli, Hyderabad</li>
+                  <li>Office:- Zemoso Technology, Hyderabad</li>
               </ul>
       </span>
-    </div>
+    </div> -->
+          <!-- <div class = "contactCard">
+              <h3><font color="#E67E22">Email @:</font></h3>
+              <ul>
+                  <li>suryakant.kumar@zemosolabs.com</li>
+                  <li>suryakantkumar4455@gmail.com</li>
+              </ul>
+              <h3><font color="#E67E22">Address:</font></h3>
+              <ul>
+                  <li>K.R Mens Hostel, gachibowli, Hyderabad</li>
+                  <li>Office:- Zemoso Technology, Hyderabad</li>
+              </ul>
+            </div> -->
+            <script src="js/contact_form.js"></script>
+
+
+            <form id= "Message_Contact" action="mailto:suryakant.kumar@zemosolabs.com" method="post" class = "contactCard">
+                          <h3> <font color = "#E67E22">Leave me a note:</font></h3>
+             
+              <ul>
+              <label for="name">Name*</label>
+              <input type="text" name="user_name" id="name" placeholder="Your Name" required >
+              </ul>
+
+              <ul>
+              <label for="email">Email*</label>
+              <input type="email" name="user_email" id="email" placeholder="example@gmail.com" required>
+              </ul>
+
+              <ul>
+                <textarea name="message" placeholder="Enter your message..."></textarea></ul>
+                <ul class="button">
+                <button name = "contact_submit" id = "submit" form = "Message_Contact" value = "submit" type="submit">Send your message
+                </button>
+              </ul>
+
+          </form>
                 
+           <!-- </div> -->
+                
+           
+           
+
+
+
+
                 
             <div class= "line"></div>
             </div>
 
-            <div id="footer">
+          <div id="footer">
        
           <a href="https://www.facebook.com/imsuryakr" target="_blank"><img src="image/c14.png" alt="Smiley face" width="30" height="30"></a>
           <a href="https://www.linkedin.com/in/suryakant-kumar-130421b0/" target="_blank">  <img src="image/c15.png" alt="Smiley face" width="30" height="30" ></a>
