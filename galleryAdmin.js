@@ -315,11 +315,11 @@ console.log(data1);
 if (data1[0] > yyyy){
 // alert("You can't upload a future image!");
 return false;}
-if(data1[0] === yyyy){
+if(data1[0] == yyyy){
       if (data1[1] > mm){
         // alert("You can't upload a future image!");
 return false;}
-      else {if (data1[1] === mm && data1[2] > dd){
+      else {if (data1[1] == mm && data1[2] > dd){
         // alert("You can't upload a future image!");
 return false;}
 }
